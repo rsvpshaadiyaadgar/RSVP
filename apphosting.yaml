@@ -1,0 +1,52 @@
+# Settings to manage and configure a Firebase App Hosting backend
+runConfig:
+  minInstances: 1
+env:
+  # 1. This is your secret variable
+  - variable: FIREBASE_SERVICE_ACCOUNT_KEY
+    secret: new-secret-admin
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: GEMINI_API_KEY
+    secret: GEMINI_API_KEY
+    availability:
+      - BUILD
+      - RUNTIME
+
+  # 2. Add ALL your public variables here
+  - variable: NEXT_PUBLIC_FIREBASE_API_KEY
+    value: "AIzaSyB1WIVA7naqJQ7bjP6aKaGQSwFB3sxF0q0"
+    availability:
+      - BUILD
+      - RUNTIME
+      
+  - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+    value: "studio-4694078135-b3ae3.firebaseapp.com"
+    availability:
+      - BUILD
+      - RUNTIME
+      
+  - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
+    value: "studio-4694078135-b3ae3"
+    availability:
+      - BUILD
+      - RUNTIME
+      
+  - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+    value: "studio-4694078135-b3ae3.firebasestorage.app"
+    availability:
+      - BUILD
+      - RUNTIME
+      
+  - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+    value: "521783679507"
+    availability:
+      - BUILD
+      - RUNTIME
+      
+  - variable: NEXT_PUBLIC_FIREBASE_APP_ID
+    value: "1:521783679507:web:f08b7a069428f6eeb57de6"
+    availability:
+      - BUILD
+      - RUNTIME
