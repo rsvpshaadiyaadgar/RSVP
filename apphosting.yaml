@@ -4,7 +4,7 @@ runConfig:
 env:
   # 1. This is your secret variable
   - variable: FIREBASE_SERVICE_ACCOUNT_KEY
-    secret: new-secret-admin
+    secret: apphosting-github-conn-ti3yinq-github-oauthtoken-12b351
     availability:
       - BUILD
       - RUNTIME
