@@ -51,8 +51,3 @@ env:
       - BUILD
       - RUNTIME
 
- - variable: FIREBASE_CONFIG
-   value: '{"apiKey":"AIzaSyB1WIVA7naqJQ7bjP6aKaGQSwFB3sxF0q0","authDomain":"studio-4694078135-b3ae3.firebaseapp.com","projectId":"studio-4694078135-b3ae3","storageBucket":"studio-4694078135-b3ae3.firebasestorage.app","messagingSenderId":"521783679507","appId":"1:521783679507:web:f08b7a069428f6eeb57de6"}'
-   availability:
-     - BUILD
-     - RUNTIME
